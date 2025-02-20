@@ -1,0 +1,13 @@
+[package]
+name = "serde_json_derive"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+cairo-lang-macro = "0.1.1"
+cairo-lang-parser = "2.9.2"
+cairo-lang-syntax = "2.9.2"

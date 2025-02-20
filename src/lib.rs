@@ -4,7 +4,7 @@ use cairo_lang_syntax::node::kind::SyntaxKind::{TerminalStruct, TokenIdentifier}
 
 
 #[derive_macro]
-pub fn jsonditi(token_stream: TokenStream) -> ProcMacroResult {
+pub fn json_deserialize_macro(token_stream: TokenStream) -> ProcMacroResult {
     let db = SimpleParserDatabase::default();
     let (parsed, _diag) = db.parse_virtual_with_diagnostics(token_stream);
 
